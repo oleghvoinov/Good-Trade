@@ -1,0 +1,57 @@
+.form-group {
+  margin: 20px 20px;
+  padding: 20xp;
+  font-size: 14px;
+}
+.form-group__item {
+  margin-top: 5px;
+}
+.real-checkbox {
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+}
+.real-checkbox:focus + .custom-checkbox {
+  box-shadow: 0px 0px 0px 0.5px #38577a, 0px 0px 2px #7e9bbd;
+  outline: none;
+}
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 1px solid #7e9bbd;
+  border-radius: 4px;
+  vertical-align: sub;
+  margin-right: 5px;
+  transform: translate(3px, -1px);
+}
+
+.custom-checkbox::before {
+  content: "";
+  /* Рисуем галку */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' style='fill: rgba(40,116,252, 1);transform: ;msFilter:;'%3E%3Cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  margin-top: 1px;
+
+  transition: 0.2s ease-in;
+  z-index: 100;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}

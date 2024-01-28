@@ -1,0 +1,115 @@
+//Body style
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+@import "vendor/swiper-bundle.min.scss";
+
+@font-face {
+  font-family: "Commuters Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("CommutersSans-Regular.eot");
+  src: local("Commuters Sans"), local("CommutersSans-Regular"),
+    url("../fonts/CommutersSans-Regular.woff2") format("woff2"),
+    url("../fonts/CommutersSans-Regular.woff") format("woff"),
+    url("../fonts/CommutersSans-Regular.ttf") format("ttf"),
+    url("../fonts/CommutersSans-Regular.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Commuters Sans";
+  src: url("CommutersSans-Light.eot");
+  src: local("Commuters Sans Light"), local("CommutersSans-Light"),
+    url("../fonts/CommutersSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CommutersSans-Light.woff2") format("woff2"),
+    url("../fonts/CommutersSans-Light.woff") format("woff"),
+    url("../fonts/CommutersSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Commuters Sans";
+  src: url("CommutersSans-Bold.eot");
+  src: local("Commuters Sans Bold"), local("CommutersSans-Bold"),
+    url("../fonts/CommutersSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CommutersSans-Bold.woff2") format("woff2"),
+    url("../fonts/CommutersSans-Bold.woff") format("woff"),
+    url("../fonts/CommutersSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Optima Pro Roman";
+  src: url("OptimaLTPro-Roman.eot");
+  src: local("Optima Pro Roman"), local("OptimaLTPro-Roman"),
+    url("../fonts/OptimaLTPro-Roman.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OptimaLTPro-Roman.woff2") format("woff2"),
+    url("../fonts/OptimaLTPro-Roman.woff") format("woff"),
+    url("../fonts/OptimaLTPro-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Optima Pro";
+  src: url("OptimaLTPro-Medium.eot");
+  src: local("Optima Pro Medium"), local("OptimaLTPro-Medium"),
+    url("../fonts/OptimaLTPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OptimaLTPro-Medium.woff2") format("woff2"),
+    url("../fonts/OptimaLTPro-Medium.woff") format("woff"),
+    url("../fonts/OptimaLTPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  // font-size: 62.5%;
+  width: 100%;
+}
+
+body {
+  background-color: $beliy;
+  font-family: "Optima Pro Roman";
+  font-size: 1.4rem;
+  line-height: 1.5;
+
+  color: $primary;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  // height: 100%;
+}
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/subnav";
+@import "blocks/main-post";
+@import "blocks/signup";
+@import "blocks/slider1";
+@import "blocks/most-recent";
+@import "blocks/target-page";
+@import "blocks/post";
+@import "blocks/link-bar";
+@import "blocks/comments";
+@import "blocks/dropdouwn";
+@import "blocks/accordion";
+@import "blocks/modal";
+@import "blocks/chackbox";
+@import "blocks/about";
+@import "blocks/newsletter";
+@import "blocks/tab";
+@import "blocks/rang";
+@import "blocks/burger";
+@import "blocks/mobile-nav";
+@import "blocks/footer";

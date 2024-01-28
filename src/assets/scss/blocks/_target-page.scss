@@ -1,0 +1,19 @@
+.target-page {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px auto;
+
+  @include breakpoint($tablet-bp) {
+    margin: 140px auto;
+  }
+  @include breakpoint($mobile-bp) {
+    margin: 20px auto;
+  }
+}
+
+.target-page__page {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

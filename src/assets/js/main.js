@@ -1,0 +1,10 @@
+//= components/script.js
+//= components/script2.js
+//= components/script3.js
+//= components/script4.js
+//= components/script5.js
+//= components/date.js
+//= components/currency.js
+//= components/phone-nomber.js
+//= components/card.js
+//= components/burger.js

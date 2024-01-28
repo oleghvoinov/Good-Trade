@@ -1,0 +1,122 @@
+.signup {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 250px 0;
+}
+
+.signup__svg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.signup__content {
+  position: relative;
+
+  font-weight: bold;
+
+  padding: 40px 40px 40px 40px;
+  text-align: center;
+  z-index: 1;
+
+  &--footer {
+    padding: 0;
+    text-align: start;
+  }
+}
+.signup__title {
+  font-size: 28px;
+
+  &--footer {
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+.signup__text {
+  margin: 10px;
+  font-size: 15px;
+  &--footer {
+    font-size: 19px;
+    line-height: 1.2;
+    margin: 25px 0;
+  }
+}
+
+.signup__form {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  max-width: 700px;
+
+  &--footer {
+    margin: 20px 0;
+  }
+  @include breakpoint($tablet-min-bp) {
+    display: block;
+  }
+}
+
+.signup__form-input {
+  border: 1px solid $primary;
+  border-radius: 50px;
+
+  background: none;
+
+  padding: 10px;
+
+  font-family: inherit;
+  font-size: 15px;
+  color: $primary;
+
+  flex-grow: 1;
+  @include breakpoint($tablet-min-bp) {
+    width: 100%;
+  }
+}
+
+.signup__form-button {
+  position: relative;
+  margin: 0 10px;
+  padding: 12px 24px;
+
+  border: 1px solid $primary;
+  border-radius: 50px;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  @include breakpoint($tablet-min-bp) {
+    width: 100%;
+    display: block;
+    margin: 10px 0 0 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+
+    transition: all 0.3s linear;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    &::before {
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: all 0.3s linear;
+    }
+  }
+}

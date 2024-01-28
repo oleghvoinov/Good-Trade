@@ -1,0 +1,18 @@
+.subnav {
+  display: block;
+  position: absolute;
+  background-color: $beliy;
+
+  pointer-events: none;
+
+  padding: 10px;
+  top: 100%;
+  left: -10px;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: all 0.3s linear;
+}
+
+.subnav__item {
+  margin-top: 5px;
+}

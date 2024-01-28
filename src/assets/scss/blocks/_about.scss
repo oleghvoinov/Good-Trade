@@ -1,0 +1,60 @@
+.about {
+  width: 100%;
+  display: flex;
+  @include breakpoint($tablet-bp) {
+    display: block;
+  }
+}
+
+.about__header {
+  width: 50%;
+  height: 100%;
+  @include breakpoint($tablet-bp) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+.about-img {
+  position: relative;
+  width: 50%;
+
+  @include breakpoint($tablet-bp) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+.about-img__img {
+  width: 250px;
+
+  position: absolute;
+
+  &--1 {
+    top: 5%;
+    left: 10%;
+  }
+  &--2 {
+    bottom: 15%;
+    right: 30%;
+  }
+  &--3 {
+    top: 0;
+    right: 0;
+  }
+  @include breakpoint($tablet-bp) {
+    display: none;
+  }
+}
+
+.about__content {
+  display: grid;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  grid-template-columns: 50% 50%;
+
+  @include breakpoint($tablet-min-bp) {
+    display: block;
+  }
+}
